@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>AtomixExample</groupId>
+    <artifactId>AtomixExample</artifactId>
+    <!--<version>1.0-SNAPSHOT</version>-->
+    <version>1.0</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+    <dependencies>
+  <!--      <dependency>
+            <groupId>io.atomix</groupId>
+            <artifactId>atomix-all</artifactId>
+            <version>1.0.8</version>
+        </dependency>-->
+
+<!--
+было закомментировано
+        <dependency>
+            <groupId>io.atomix</groupId>
+            <artifactId>atomix-primary-backup</artifactId>
+            <version>3.0.6</version>
+        </dependency>
+        <dependency>
+            <groupId>io.atomix</groupId>
+            <artifactId>atomix-gossip</artifactId>
+            <version>3.0.6</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.atomix</groupId>
+            <artifactId>atomix-raft</artifactId>
+        </dependency>
+
+        &lt;!&ndash; https://mvnrepository.com/artifact/io.atomix/atomix-cluster &ndash;&gt;
+        <dependency>
+            <groupId>io.atomix</groupId>
+            <artifactId>atomix-cluster</artifactId>
+            <version>3.0.7</version>
+        </dependency>
+        <dependency>
+            <groupId>io.atomix</groupId>
+            <artifactId>atomix</artifactId>
+            <version>3.0.6</version>
+        </dependency>
+
+        &lt;!&ndash; https://mvnrepository.com/artifact/io.atomix/atomix-primitive &ndash;&gt;
+        <dependency>
+            <groupId>io.atomix</groupId>
+            <artifactId>atomix-primitive</artifactId>
+            <version>3.0.7</version>
+        </dependency>
+
+        &lt;!&ndash; https://mvnrepository.com/artifact/io.atomix/atomix-messaging &ndash;&gt;
+        <dependency>
+            <groupId>io.atomix</groupId>
+            <artifactId>atomix-messaging</artifactId>
+            <version>2.0.23</version>
+        </dependency>
+-->
+
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
+     <!--   <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.7.12</version>
+        </dependency>
+
+        &lt;!&ndash; https://mvnrepository.com/artifact/com.google.guava/guava &ndash;&gt;
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>r05</version>
+        </dependency>-->
+
+
+
+
+
+
+
+
+
+        <!--
+        было закомментировано
+        <dependency>
+             <groupId>io.atomix</groupId>
+             <artifactId>atomix</artifactId>
+             <version>3.0.6</version>
+         </dependency>
+         <dependency>
+             <groupId>io.atomix</groupId>
+             <artifactId>atomix-raft</artifactId>
+             <version>3.0.6</version>
+         </dependency>
+         <dependency>
+             <groupId>io.atomix</groupId>
+             <artifactId>atomix-primary-backup</artifactId>
+             <version>3.0.6</version>
+         </dependency>
+         <dependency>
+             <groupId>io.atomix</groupId>
+             <artifactId>atomix-gossip</artifactId>
+             <version>3.0.6</version>
+         </dependency>-->
+        <!-- https://mvnrepository.com/artifact/io.atomix/atomix-all -->
+
+        <!--<dependency>
+            <groupId>io.atomix</groupId>
+            <artifactId>atomix-all</artifactId>
+            <version>1.0.8</version>
+        </dependency>
+
+       <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.5</version>
+        </dependency>
+
+        &lt;!&ndash; https://mvnrepository.com/artifact/io.netty/netty-transport &ndash;&gt;
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-transport</artifactId>
+            <version>4.1.30.Final</version>
+        </dependency>
+
+        &lt;!&ndash; https://mvnrepository.com/artifact/io.atomix.copycat/copycat-server &ndash;&gt;
+        <dependency>
+            <groupId>io.atomix.copycat</groupId>
+            <artifactId>copycat-server</artifactId>
+            <version>1.2.8</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.atomix.catalyst</groupId>
+            <artifactId>catalyst-common</artifactId>
+            <version>1.2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.atomix.catalyst</groupId>
+            <artifactId>catalyst-concurrent</artifactId>
+            <version>1.2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.atomix.catalyst</groupId>
+            <artifactId>catalyst-local</artifactId>
+            <version>1.2.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.atomix.catalyst</groupId>
+            <artifactId>catalyst-serializer</artifactId>
+            <version>1.2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.atomix.catalyst</groupId>
+            <artifactId>catalyst-buffer</artifactId>
+            <version>1.2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.atomix</groupId>
+            <artifactId>atomix-coordination</artifactId>
+            <version>0.1.0-beta4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.atomix.catalyst</groupId>
+            <artifactId>catalyst-transport</artifactId>
+            <version>1.2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>io.atomix.catalyst</groupId>
+            <artifactId>catalyst-netty</artifactId>
+            <version>1.2.1</version>
+        </dependency>-->
+
+
+
+
+    </dependencies>
+
+</project>
